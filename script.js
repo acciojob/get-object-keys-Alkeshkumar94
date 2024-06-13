@@ -4,8 +4,9 @@ let student ={
 }
 Object.prototype.getKeys=function(){
 	let arr=[];
-	for(let i=0;i<this.length;i++){
-		arr.push(this[i]);
+	for(let i in this){
+		if(this.hasOwnProperty(i))
+		arr.push(i);
 	}
 	return arr;
 }
