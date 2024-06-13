@@ -3,5 +3,9 @@ let student ={
 	name:"alkesh"
 }
 Object.prototype.getKeys=function(){
-	return Object.keys(this);
+	let arr=[];
+	for(let i=0;i<this.length;i++){
+		arr.push(this[i]);
+	}
+	return arr;
 }
